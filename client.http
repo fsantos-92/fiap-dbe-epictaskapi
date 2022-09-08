@@ -1,0 +1,40 @@
+# Listar Todos
+GET http://localhost:8080/api/user
+# Authorization: Basic user ea212276-1d9c-4bc9-898e-b67aa29ef0b1
+###
+
+# Detalhes
+GET http://localhost:8080/api/user/1
+
+###
+
+# Cadastrar
+POST  http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "name": "Felipe",
+  "email": "felipe@fiap.com.br",
+  "password": "fiap123"
+}
+
+###
+# Apagar
+DELETE  http://localhost:8080/api/user/3
+Authorization: Basic admin@fiap.com.br administrador
+
+###
+# Alterar usuário
+PUT http://localhost:8080/api/user/3
+#Authorization: Basic admin@fiap.com.br administrador
+Content-Type: application/json
+
+{
+  "name": "Maria Pereira",
+  "email": "maria@fiap.com.br"
+}
+
+###
+GET http://localhost:8080/api/grupo
+
+###
