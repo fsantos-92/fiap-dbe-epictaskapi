@@ -73,13 +73,9 @@ public class UserController {
 
         var user = optional.get();
         BeanUtils.copyProperties(newUser, user, "password");
-        System.out.println(newUser.getName());
-        System.out.println(user.getName());
         user.setId(id);
-
         
         service.save(user);
-        System.out.println(user.getPassword());
 
         return ResponseEntity.ok(user);
     }

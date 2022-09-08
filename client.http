@@ -26,7 +26,7 @@ Authorization: Basic admin@fiap.com.br administrador
 ###
 # Alterar usuário
 PUT http://localhost:8080/api/user/3
-#Authorization: Basic admin@fiap.com.br administrador
+Authorization: Basic admin@fiap.com.br administrador
 Content-Type: application/json
 
 {
