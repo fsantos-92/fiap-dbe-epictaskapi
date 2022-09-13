@@ -5,7 +5,11 @@ GET http://localhost:8080/api/user
 
 # Detalhes
 GET http://localhost:8080/api/user/1
+###
 
+# Apagar
+DELETE  http://localhost:8080/api/user/1
+Authorization: Basic admin@fiap.com.br administrador
 ###
 
 # Cadastrar
@@ -13,19 +17,14 @@ POST  http://localhost:8080/api/user
 Content-Type: application/json
 
 {
-  "name": "Felipe",
-  "email": "felipe@fiap.com.br",
-  "password": "fiap123"
+  "name": "João Carlos Lima",
+  "email": "joao@fiap.com.br",
+  "password": "123"
 }
-
 ###
-# Apagar
-DELETE  http://localhost:8080/api/user/3
-Authorization: Basic admin@fiap.com.br administrador
 
-###
 # Alterar usuário
-PUT http://localhost:8080/api/user/3
+PUT http://localhost:8080/api/user/1
 Authorization: Basic admin@fiap.com.br administrador
 Content-Type: application/json
 
