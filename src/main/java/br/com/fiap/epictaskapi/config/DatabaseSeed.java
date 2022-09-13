@@ -33,12 +33,12 @@ public class DatabaseSeed implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         
-        userRepository.save(
-            new User()
-                .name("João")
-                .email("joao@fiap.com.br")
-                .password(passwordEncoder.encode("123"))
-        );
+        // userRepository.save(
+        //     new User()
+        //         .name("João")
+        //         .email("joao@fiap.com.br")
+        //         .password(passwordEncoder.encode("123"))
+        // );
         userRepository.save(
             new User()
                 .name("Admin")
