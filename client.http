@@ -37,3 +37,36 @@ Content-Type: application/json
 GET http://localhost:8080/api/grupo
 
 ###
+
+
+#Lista de pacientes
+GET http://localhost:8080/api/paciente
+###
+
+# Detalhes do paciente
+GET http://localhost:8080/api/paciente/1
+###
+
+# Criar paciente
+POST  http://localhost:8080/api/paciente
+Content-Type: application/json
+
+{
+  "nome": "João Carlos Lima",
+  "dataNascimento": "2001-01-21"
+}
+###
+
+# Apagar
+DELETE  http://localhost:8080/api/paciente/1
+###
+
+# Alterar usuário
+PUT http://localhost:8080/api/paciente/1
+Content-Type: application/json
+
+{
+  "nome": "João Carlos Menk",
+  "dataNascimento": "2003-06-11"
+}
+###
